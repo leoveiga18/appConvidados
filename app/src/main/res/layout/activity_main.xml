@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnAdd"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -37,13 +37,18 @@
         app:layout_constraintVertical_bias="0.621" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="188dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_margin="10dp"
-        app:srcCompat="android:drawable/ic_input_add" />
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="209dp"
+        android:layout_height="196dp"
+        android:src="@android:drawable/ic_menu_add"
+        android:visibility="visible"
+        app:fabSize="auto"
+        app:layout_anchor="@id/floatingActionButton2"
+        app:layout_anchorGravity="center"
+        app:maxImageSize="100dp"
+        app:useCompatPadding="true"
+        tools:layout_editor_absoluteX="769dp"
+        tools:layout_editor_absoluteY="2272dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppConvidados"
         tools:targetApi="31">
         <activity
+            android:name=".List_form"
+            android:exported="false" />
+        <activity
             android:name=".guest_form"
             android:exported="false" />
         <activity
